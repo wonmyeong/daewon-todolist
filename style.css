@@ -1,0 +1,105 @@
+@import "reset.css";
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #feb800;
+  width: inherit;
+  height: 50px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+header i {
+  margin: 0px 10px;
+  color: red;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  padding: 0;
+  border-radius: 10px;
+  background-color: #cecece;
+}
+
+#todo-status {
+  margin: 20px;
+  display: flex;
+}
+
+#todo-status a {
+  padding: 10px;
+}
+
+.todo-task__complete {
+  text-decoration: line-through;
+}
+
+.todo-task__main-task {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 10px;
+}
+
+#todo-task__main {
+  width: 90vw;
+}
+@keyframes chat {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.todo-task__main-task div:first-child {
+  background-color: white;
+  width: auto;
+  height: 30px;
+  text-align: center;
+  padding: 5px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+#todo-task {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 300px;
+  padding: 0px;
+}
+.add-button-status__bar {
+  margin: 10px;
+}
+
+#todo-task__add {
+  color: pink;
+}
+
+#todo-task__button button {
+  border: none;
+  background-color: #cecece;
+}
+
+#todo-task__button button > i {
+  pointer-events: none;
+}
+
+#under-line {
+  position: absolute;
+  background-color: pink;
+  height: 4px;
+  width: 0px;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+  transition: 0.5s;
+}
